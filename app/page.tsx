@@ -1,6 +1,6 @@
 // app/page.js
 import React from "react";
-import { Mail, Github, Linkedin, Download, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, Download } from "lucide-react";
 import ProjectCarousel from "@/app/components/ProjectCarousel";
 export default function Home() {
   const projects = [
@@ -131,7 +131,7 @@ export default function Home() {
       {/* Projects Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">
+          <h2 className="text-3xl text-gray-700 font-bold mb-12 text-center">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -176,22 +176,19 @@ export default function Home() {
                 <label className="block text-gray-700 mb-2">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 text-gray-700 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                 />
               </div>
               <div>
                 <label className="block text-gray-700 mb-2">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full text-gray-700 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                 />
               </div>
               <div>
                 <label className="block text-gray-700 mb-2">Message</label>
-                <textarea
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                  rows="4"
-                ></textarea>
+                <textarea className="w-full px-4 py-2 border text-gray-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
               </div>
               <button
                 type="submit"

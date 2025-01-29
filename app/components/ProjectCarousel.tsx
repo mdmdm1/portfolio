@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 // Define the type for the props
 interface ProjectCarouselProps {
@@ -34,9 +35,11 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ images }) => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="relative flex justify-center">
-            <img
+            <Image
               src={image}
               alt={`Project Screenshot ${index + 1}`}
+              width={500}
+              height={400}
               className="w-full h-64 object-cover rounded-lg shadow-md"
             />
           </div>
